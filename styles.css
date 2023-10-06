@@ -1,81 +1,97 @@
 /* Estilos para la barra de navegación */
 .navbar {
     background-color: #333;
-    padding: 10px;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .left a {
+}
+
+.left a {
     color: white;
     text-decoration: none;
-    margin-right: 20px;
-  }
-  
-  .left a:hover {
+    margin-right: 1rem;
+}
+
+.left a:hover {
     text-decoration: underline;
-  }
-  
-  .right input {
-    padding: 5px;
-  }
-  
-  /* Estilos para el contenido de la página */
-  .content {
-    padding: 20px;
-    max-width: 1000px; /* Ancho máximo para el contenido */
+}
+
+.right input {
+    padding: 0.5rem;
+}
+
+/* Estilos para el contenido de la página */
+.content {
+    padding: 2rem;
+    max-width: 100%; /* Ancho máximo para el contenido */
     margin: 0 auto; /* Centrar en la página */
     display: flex; /* Utilizamos flex para alinear botones y párrafos verticalmente */
     flex-wrap: wrap; /* Envolver elementos en pantallas pequeñas */
-  }
-  
-  /* Estilos para los botones en el lado izquierdo */
-  .left-buttons {
-    width: 150px;
-  }
-  
-  .left-buttons button {
+}
+
+/* Estilos para los botones en el lado izquierdo */
+.left-buttons {
+    width: 6rem;
+}
+
+.left-buttons button {
     display: block;
     background-color: #333;
     color: white;
     border: none;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
     cursor: pointer;
-  }
-  
-  .left-buttons button:hover {
+}
+
+.left-buttons button:hover {
     background-color: #555;
-  }
-  
-  /* Estilos para los párrafos */
-  .paragraphs {
+}
+
+/* Estilos para los párrafos */
+.paragraphs {
     flex: 1; /* El contenido de los párrafos ocupa el espacio restante */
-  }
-  
-  .vertical-paragraph {
-    margin-right: 20px;
-    margin-bottom: 20px; /* Espacio entre párrafos */
-  }
-  
-  .vertical-paragraph p {
+}
+
+.vertical-paragraph {
+    margin-right: 1rem;
+    margin-bottom: 1rem; /* Espacio entre párrafos */
+}
+
+.vertical-paragraph p {
     background-color: #f0f0f0; /* Fondo gris claro */
-    padding: 10px;
+    padding: 1rem;
     margin: 0; /* Elimina el margen inferior en los párrafos */
-  }
-  
-  /* Estilos para centrar los encabezados h1 y h2 */
-  h1, h2 {
+}
+
+/* Estilos para centrar los encabezados h1 y h2 */
+h1, h2 {
     text-align: center;
     margin: 0 auto;
-    max-width: 600px; /* Ajusta el ancho máximo según tus preferencias */
-  }
-  
-  /* Media Query para adaptar estilos en pantallas pequeñas */
-  @media (max-width: 768px) {
+    max-width: 40rem; /* Ajusta el ancho máximo según tus preferencias */
+}
+
+/* Media Query para adaptar estilos en pantallas pequeñas */
+@media (max-width: 768px) {
     .content {
-      flex-direction: column; /* Apila elementos en pantallas pequeñas */
+        flex-direction: column; /* Apila elementos en pantallas pequeñas */
     }
-  }
-  
+
+    .left-buttons {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+    }
+
+    .left-buttons button {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+    }
+
+    .vertical-paragraph {
+        margin-right: 0;
+        margin-bottom: 1rem; /* Espacio entre párrafos en pantallas pequeñas */
+    }
+
+    h1, h2 {
+        max-width: 100%; /* Ancho completo en pantallas pequeñas */
+    }
+}
